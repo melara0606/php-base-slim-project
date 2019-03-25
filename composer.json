@@ -1,0 +1,14 @@
+{
+  "name": "sample/jsonsample",
+  "description": "ejemplo de json web token",
+  "require": {
+    "slim/slim": "^3.0",
+    "tuupola/slim-jwt-auth": "^3.3",
+    "monolog/monolog": "^1.24"
+  },
+  "autoload": {
+    "psr-4": {
+      "Melara\\": "src/"
+    }
+  }
+}
