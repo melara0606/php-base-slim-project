@@ -9,6 +9,8 @@
 
     // Constantes de peticiones basica para la creacion
     protected const HTTP_REQUEST_OK = 200;
+    protected const HTTP_REQUEST_FORBIDDEN = 403;
+    protected const HTTP_REQUEST_NOT_AUTHORIZATION = 401;
 
     public function __construct($app) {
       $this->app = $app;
@@ -23,9 +25,9 @@
           switch ($value) {
             case 1: $this->app->get('', [$this, $key]); break;
             case 2: $this->app->get('/{id}', [$this, $key]); break;
-            case 3: $this->app->post('/create', [$this, $key]); break;
-            case 4: $this->app->update('/update/{id}', [$this, $key]); break;
-            case 5: $this->app->delete('/delete/{id}', [$this, $key]); break;
+            case 3: $this->app->post('', [$this, $key]); break;
+            case 4: $this->app->update('/{id}', [$this, $key]); break;
+            case 5: $this->app->delete('/{id}', [$this, $key]); break;
           }
         }
       }

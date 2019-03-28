@@ -1,7 +1,53 @@
-[2019-03-25 20:48:25] app.INFO: FOO [] {"uid":"e47c4ce"}
-[2019-03-25 20:48:42] app.INFO: FOO [] {"uid":"accc059"}
-[2019-03-25 20:55:02] app.INFO: Todo salio excelente [] {"uid":"d8fbf53"}
-[2019-03-25 20:56:40] app.INFO: Todo salio excelente [] {"uid":"e5e932e"}
-[2019-03-25 23:15:29] app.INFO: Todo salio excelente [] {"uid":"c2c1576"}
-[2019-03-25 23:19:43] app.INFO: Todo salio excelente [] {"uid":"113a47e"}
-[2019-03-25 23:21:51] app.INFO: Todo salio excelente [] {"uid":"11fab35"}
+[2019-03-26 01:30:22] app.WARNING: Token not found [] {"uid":"37d9ca4"}
+[2019-03-26 01:30:59] app.WARNING: Token not found [] {"uid":"3538053"}
+[2019-03-26 01:31:44] app.WARNING: Token not found [] {"uid":"f9752e8"}
+[2019-03-26 01:33:13] app.WARNING: Token not found [] {"uid":"e27fbb5"}
+[2019-03-26 01:33:30] app.WARNING: Token not found [] {"uid":"54638d4"}
+[2019-03-26 01:33:38] app.WARNING: Token not found [] {"uid":"55778eb"}
+[2019-03-26 01:33:50] app.WARNING: Token not found [] {"uid":"6bf8af1"}
+[2019-03-26 01:34:14] app.WARNING: Token not found [] {"uid":"1a288a7"}
+[2019-03-26 01:36:01] app.WARNING: Token not found [] {"uid":"9f38207"}
+[2019-03-26 01:36:53] app.WARNING: Token not found [] {"uid":"7dd1e8b"}
+[2019-03-26 01:38:02] app.WARNING: Token not found [] {"uid":"9daa88e"}
+[2019-03-26 01:40:10] app.WARNING: Token not found [] {"uid":"f3ed5ee"}
+[2019-03-26 01:40:38] app.WARNING: Token not found [] {"uid":"ae1d329"}
+[2019-03-28 05:11:26] app.WARNING: Token not found [] {"uid":"9a50d2c"}
+[2019-03-28 05:11:39] app.WARNING: Token not found [] {"uid":"b6b9e04"}
+[2019-03-28 05:36:21] app.WARNING: Token not found [] {"uid":"7a089b6"}
+[2019-03-28 05:36:46] app.WARNING: Token not found [] {"uid":"00fe471"}
+[2019-03-28 05:38:01] app.WARNING: Token not found [] {"uid":"39e3a48"}
+[2019-03-28 05:38:10] app.WARNING: Token not found [] {"uid":"e29d8fd"}
+[2019-03-28 05:40:19] app.WARNING: Token not found [] {"uid":"72a5070"}
+[2019-03-28 05:40:48] app.WARNING: Token not found [] {"uid":"f196b82"}
+[2019-03-28 05:41:19] app.WARNING: Token not found [] {"uid":"0fe1aef"}
+[2019-03-28 05:53:08] app.WARNING: Token not found [] {"uid":"c4dcbad"}
+[2019-03-28 05:55:51] app.DEBUG: Using token from request header [] {"uid":"bec6d9c"}
+[2019-03-28 05:58:45] app.DEBUG: Using token from request header [] {"uid":"50facbd"}
+[2019-03-28 06:00:14] app.DEBUG: Using token from request header [] {"uid":"602969e"}
+[2019-03-28 06:01:29] app.DEBUG: Using token from request header [] {"uid":"f22d1d0"}
+[2019-03-28 06:03:42] app.DEBUG: Using token from request header [] {"uid":"4345eef"}
+[2019-03-28 06:04:07] app.DEBUG: Using token from request header [] {"uid":"22dd688"}
+[2019-03-28 06:05:05] app.DEBUG: Using token from request header [] {"uid":"945c96e"}
+[2019-03-28 06:05:14] app.DEBUG: Using token from request header [] {"uid":"af01c51"}
+[2019-03-28 06:05:42] app.DEBUG: Using token from request header [] {"uid":"b69705c"}
+[2019-03-28 06:05:54] app.DEBUG: Using token from request header [] {"uid":"f689750"}
+[2019-03-28 06:06:37] app.DEBUG: Using token from request header [] {"uid":"cc6ffe4"}
+[2019-03-28 06:07:22] app.DEBUG: Using token from request header [] {"uid":"aa2d987"}
+[2019-03-28 06:08:04] app.DEBUG: Using token from request header [] {"uid":"9fdf723"}
+[2019-03-28 06:09:27] app.DEBUG: Using token from request header [] {"uid":"3e40b75"}
+[2019-03-28 06:09:38] app.DEBUG: Using token from request header [] {"uid":"7436673"}
+[2019-03-28 06:10:49] app.DEBUG: Using token from request header [] {"uid":"8a9208f"}
+[2019-03-28 06:11:19] app.DEBUG: Using token from request header [] {"uid":"946ff53"}
+[2019-03-28 06:11:33] app.DEBUG: Using token from request header [] {"uid":"1fefc40"}
+[2019-03-28 06:15:39] app.DEBUG: Using token from request header [] {"uid":"38a0bd8"}
+[2019-03-28 06:16:06] app.DEBUG: Using token from request header [] {"uid":"b4d1a01"}
+[2019-03-28 06:18:03] app.DEBUG: Using token from request header [] {"uid":"faff2fe"}
+[2019-03-28 06:18:23] app.DEBUG: Using token from request header [] {"uid":"062aa30"}
+[2019-03-28 06:18:33] app.DEBUG: Using token from request header [] {"uid":"6bf3bea"}
+[2019-03-28 06:19:55] app.DEBUG: Using token from request header [] {"uid":"67faf3d"}
+[2019-03-28 06:20:05] app.DEBUG: Using token from request header [] {"uid":"98c435d"}
+[2019-03-28 06:20:11] app.WARNING: Token not found [] {"uid":"3aab19d"}
+[2019-03-28 06:20:15] app.DEBUG: Using token from request header [] {"uid":"e773a09"}
+[2019-03-28 06:20:19] app.DEBUG: Using token from request header [] {"uid":"7e74607"}
+[2019-03-28 06:20:25] app.DEBUG: Using token from request header [] {"uid":"2e1bd7a"}
+[2019-03-28 06:21:40] app.DEBUG: Using token from request header [] {"uid":"5f30b14"}

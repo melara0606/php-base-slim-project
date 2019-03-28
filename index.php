@@ -2,6 +2,8 @@
   /* Para la configuracion del framework  */
   require 'vendor/autoload.php';
 
+  session_start();
+
   // Configuracion del framework
   $settings = require './src/settings.php';
   
@@ -10,6 +12,9 @@
 
   // Dependencias
   require './src/dependencies.php';
+
+  // Middleware
+  require './src/middleware.php';
   
   // Rutas
   require './src/routes.php';
