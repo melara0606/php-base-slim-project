@@ -13,6 +13,8 @@ class TodoController extends Controller {
     parent::__construct($app);
   }
 
+  public function all() {}
+
   public function create(Request $request, Response $response)
   {
     if(false === $this->root->token->hasScope(['todo.create']))

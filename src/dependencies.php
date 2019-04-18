@@ -1,7 +1,6 @@
 <?php
+
 // DIC configuration
-
-
 $container = $app->getContainer();
 
 // logger
@@ -11,4 +10,8 @@ $container['logger'] = function ($c) {
   $logger->pushProcessor(new Monolog\Processor\UidProcessor());
   $logger->pushHandler(new Monolog\Handler\StreamHandler($settings['logger']['path'], Monolog\Logger::DEBUG));
   return $logger;
+};
+
+$container['db'] = function($c) {
+  return new MysqliDb ('localhost', 'root', '', 'academia');  
 };

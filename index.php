@@ -1,9 +1,6 @@
 <?php
   /* Para la configuracion del framework  */
   require 'vendor/autoload.php';
-
-  session_start();
-
   // Configuracion del framework
   $settings = require './src/settings.php';
   
