@@ -23,7 +23,7 @@
         $container["token"]->populate($arguments["decoded"]);
       },
       "error" => function ($response, $arguments) {
-        return new UnauthorizedResponse($arguments['message'], 401);
+        return new UnauthorizedResponse($arguments['message'], 401, 'Unauthorized');
       }
     ]);
   };

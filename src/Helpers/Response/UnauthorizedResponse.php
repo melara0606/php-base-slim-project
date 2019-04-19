@@ -7,9 +7,9 @@
   use Crell\ApiProblem\ApiProblem;
 
   class UnauthorizedResponse extends Response {
-    public function __construct($message = '', $status = 401) {
+    public function __construct($message = '', $status = 401, $type = 'v') {
 
-      $problem = new ApiProblem($message, "not-authorized");
+      $problem = new ApiProblem($message, $type);
       $problem->setStatus($status);
 
       $handle = fopen("php://temp", "wb+");
