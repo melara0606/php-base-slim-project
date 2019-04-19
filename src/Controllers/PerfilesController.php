@@ -158,8 +158,16 @@ class PerfilesController extends Controller {
       return $this->UnauthorizedResponse();
     }
 
+    $record = $this->root->db->where('id', $id)->getOne('perfiles');
+    $recursos = $this->root->db->
+      join('recursos', 'perfiles_recursos.recurso_id = recursos.id', 'INNER')
+      ->where('perfiles_recursos.perfil_id', $id)
+      ->get('perfiles_recursos', null, 'perfiles_recursos.consultar, perfiles_recursos.agregar, perfiles_recursos.editar, perfiles_recursos.eliminar, perfiles_recursos.recurso_id, perfiles_recursos.perfil_id, recursos.icons, recursos.nombre, recursos.estado');
+
+    $record['items'] = $recursos;
+
     return $this->responseStatus200($response, [
-      "record" => $this->root->db->where('id', $id)->getOne('perfiles')
+      "record" => $record
     ]);
   }
 
