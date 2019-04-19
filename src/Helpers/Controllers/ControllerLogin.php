@@ -13,8 +13,9 @@
     // Constantes de peticiones basica para la creacion
     protected const HTTP_REQUEST_OK = 200;
     protected const HTTP_REQUEST_FORBIDDEN = 403;
-    protected const HTTP_REQUEST_NOT_AUTHORIZATION = 401;
     protected const HTTP_REQUEST_NOT_FOUND = 404;
+    protected const HTTP_REQUEST_NOT_IMPLEMENTED = 402;
+    protected const HTTP_REQUEST_NOT_AUTHORIZATION = 401;
 
     public $routeName = 'todos';
     public function __construct($app) {

@@ -29,4 +29,30 @@
     {
       return new UnauthorizedResponse('RECURSO NO ENCONTRADO', self::HTTP_REQUEST_NOT_FOUND, 'Not found');
     }
+
+    protected function editDatabaseBasic($id, $table, $data = array()) {
+      $result = null;
+      if($id) {
+        $result = $this->root->db->where('id', $id)->update($table, $data);
+      }
+
+      return $result;
+    }
+
+    protected function editDatabase($id, $table, $data = array(), $response) {
+      if($id) {
+        $result = $this->root->db->where('id', $id)->update($table, $data);
+
+        if($result){
+          $record = $this->root->db->where('id', $id)->getOne($table);
+          return $this->responseStatus200($response, [
+            "record" => $record
+          ]);
+        }else {
+          return $this->UnProblemApiResponse('Tenemos un problema con la base de datos');
+        }
+      } else {
+        return $this->UnProblemApiResponse('El id es requerido en la peticion');
+      }
+    }
   }
