@@ -39,12 +39,12 @@
       return $result;
     }
 
-    protected function editDatabase($id, $table, $data = array(), $response) {
+    protected function editDatabase($id, $table, $data = array(), $response, $campo = 'id') {
       if($id) {
-        $result = $this->root->db->where('id', $id)->update($table, $data);
+        $result = $this->root->db->where($campo, $id)->update($table, $data);
 
         if($result){
-          $record = $this->root->db->where('id', $id)->getOne($table);
+          $record = $this->root->db->where($campo, $id)->getOne($table);
           return $this->responseStatus200($response, [
             "record" => $record
           ]);
@@ -54,5 +54,22 @@
       } else {
         return $this->UnProblemApiResponse('El id es requerido en la peticion');
       }
+    }
+
+    protected function getByIdNotFound($record = null, $response) {
+      if($record){
+        return $this->responseStatus200($response, $record);
+      }else{
+        return $this->UnNotFound();
+      }
+    }
+
+    protected function uniQUnique($modulo = '') {
+      $generadorPrivate = "melara-project-academica-$modulo";
+      return substr(
+        base64_encode(
+          md5( uniqid($generadorPrivate) )
+        ), 0, 24
+      );
     }
   }

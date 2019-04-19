@@ -7,9 +7,8 @@
 
     $this->group('/modulos', function () {
       $this->group('/niveles', function () { new Melara\Controllers\NivelesController($this); });
-      
-      // Perfil ... mantenimiento de los recursos
       $this->group('/perfiles', function () { new Melara\Controllers\PerfilesController($this); });
+      $this->group('/usuarios', function () { new Melara\Controllers\UsuariosController($this); });
     });
 
     // $this->group('/todo', function (){ new Melara\Controllers\TodoController($this); });
