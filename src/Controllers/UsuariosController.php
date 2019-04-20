@@ -8,6 +8,9 @@ use \Psr\Http\Message\ServerRequestInterface as Request;
 use Melara\Helpers\Controllers\Controller;
 use Melara\Helpers\Response\UnauthorizedResponse;
 
+/**
+ * TODO: PENDIENTE LA VALIDACION DE QUE NO SE REPITA EL USUARIO
+ */
 
 /* $this->app  [variable de entorno], $this->root [all container] */
 class UsuariosController extends Controller {

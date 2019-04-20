@@ -100,6 +100,7 @@
           ->where('sucursal_cod', $usuario['sucursal_code'])
           ->where('sucursales.estado', 1)
           ->getOne('sucursales');
+        
 
       if( !($personal && $sucursal && $perfil && $usuario['estado'] != 0) ) {
         $array_response['response'] = new UnauthorizedResponse (

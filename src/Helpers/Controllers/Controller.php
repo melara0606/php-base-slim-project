@@ -39,10 +39,15 @@
       return $result;
     }
 
-    protected function editDatabase($id, $table, $data = array(), $response, $campo = 'id') {
+    protected function editDatabase(
+      $id, $table, $data = array(), $response, $campo = 'id', $process = 'update'
+    ) {
       if($id) {
-        $result = $this->root->db->where($campo, $id)->update($table, $data);
-
+        if($process == 'update'){
+          $result = $this->root->db->where($campo, $id)->update($table, $data);
+        } else {
+          $result = $this->root->db->insert($table, $data);
+        }
         if($result){
           $record = $this->root->db->where($campo, $id)->getOne($table);
           return $this->responseStatus200($response, [

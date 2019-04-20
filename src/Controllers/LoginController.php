@@ -5,6 +5,10 @@
   use Melara\Helpers\Response\UnauthorizedResponse;
   use \Psr\Http\Message\ResponseInterface as Response;
   use \Psr\Http\Message\ServerRequestInterface as Request;
+
+  /**
+   * TODO: VERIFICAR BIEN SI EXISTE PERSONAL, PERFIL Y SUCURSAL A UN USUARIO
+   */
   
   class LoginController extends ControllerLogin {
     public function __construct($app) {
